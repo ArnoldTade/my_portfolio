@@ -17,6 +17,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+/*
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -26,19 +27,46 @@ body {
         opacity: 1;
     }
 }
+*/
+@keyframes animation-left {
+    from {
+        opacity: 0;
+        left: -500px;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes animation-bottom {
+    from {
+        opacity: 0;
+        bottom: -300px;
+    }
+
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
 
 .navbar {
     background-color: var(--bg-color);
     opacity: 80%;
+
 }
 
 .navbar-brand {
     color: var(--text-color);
     font-size: 25px !important;
-
     padding: 50px;
     justify-content: space-between;
 
+    position: relative;
+    animation: animation-left 1s ease;
 
 }
 
@@ -49,31 +77,76 @@ body {
 }
 
 .main-hero {
-    margin: 50px 50px 20vh 50px;
+    margin: 50px 50px 30vh 50px;
+    position: relative;
 
     .text-title {
         font-size: 4.2rem !important;
     }
 }
 
+.ux {
+    opacity: 0;
+    position: relative;
+    animation: animation-left 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.interfaces {
+    opacity: 0;
+    position: relative;
+    animation: animation-left 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.web {
+    opacity: 0;
+    position: relative;
+    animation: animation-left 1.3s ease forwards;
+    animation-delay: 0.8s;
+}
+
 section {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    opacity: 0;
+    position: relative;
+    animation-delay: 0.9s;
+    animation: animation-bottom 1s ease forwards;
+    animation-delay: 1s;
 
     .col-sm {
         margin: 10px;
         padding: 20px;
         background-color: #8a8a8a42;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        border-radius: 0.5rem;
-
+        border-radius: 1rem;
     }
 
-    .col-sm-9 {
-        background-color: #8a8a8a42;
-        padding: 30px !important;
+    .col-sm-2 {
         margin: 10px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 20px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .col-sm-9 {
+        background-color: #8a8a8a31;
+        padding: 20px !important;
+        margin: 10px 10px 100px 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 0.5rem;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .col-sm-9:hover {
+
+        transition: 0.3s;
     }
 
     .col-sm-9:nth-of-type(1) {

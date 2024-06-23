@@ -2,32 +2,49 @@
 {% block content %}
 {% load static %}
 <main class="main-hero container">
-    <p class="text-title fw-bold">Web Development. Interfaces. UX. </p>
+    <p class="text-title fw-bold"> <span class="web">Web Development.</span> <span class="interfaces">Interfaces.</span><span class="ux">UX.</span> </p>
 </main>
 <section class="section-project">
-    <div class="container">
+    <div class="container ">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-9">
                 <img src="{% static 'img/eclasched.png' %}" class="img-fluid" alt="e-claSched">
-                <p class="fs-4 fw-semibold text-center">e-ClaSched</p>
-                <p class="fs-6 fw-semibold text-center">Web-Based Class Scheduling Management System</p>
             </div>
-            <div class="col-sm ">
+            <div class="col-sm-2">
+                <p class="fs-4 fw-semibold ">e-ClaSched</p>
+                <p class="fs-6 fw-semibold ">Web-Based Class Scheduling</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <p class="fs-4 fw-semibold text-center">Farmlink</p>
+                <p class="fs-6 fw-semibold text-center">Farmer's e-commerce</p>
+            </div>
+            <div class="col-sm-9">
                 <img src="{% static 'img/ecom.png' %}" class="img-fluid" alt="e-claSched">
-                <p class="fs-4 fw-semibold text-center">E-commerce</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-9">
+                <img src="{% static 'img/bootstrap_template.png' %}" class="img-fluid" alt="e-claSched">
+            </div>
+            <div class="col-sm-2">
+                <p class="fs-4 fw-semibold text-center">Art Gallery/Store</p>
                 <p class="fs-6 fw-semibold text-center">Web-Based Class Scheduling Management System</p>
             </div>
         </div>
+        <hr>
         <div class="row">
-            <div class="col-sm">
-                <img src="{% static 'img/bootstrap_template.png' %}" class="img-fluid" alt="e-claSched">
-                <p class="fs-4 fw-semibold text-center">Semantic</p>
+            <div class="col-sm-2">
+                <p class="fs-4 fw-semibold text-center">QR Attendance</p>
                 <p class="fs-6 fw-semibold text-center">Web-Based Class Scheduling Management System</p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-9">
                 <img src="{% static 'img/semantic_template.png' %}" class="img-fluid" alt="e-claSched">
-                <p class="fs-4 fw-semibold text-center">Semantic</p>
-                <p class="fs-6 fw-semibold text-center">Web-Based Class Scheduling Management System</p>
+               
             </div>
         </div>
     </div>
@@ -38,7 +55,7 @@
         <div class="row">
             <div class="col-md-9 offset-md-2">
                 <p class="fw-semibold">
-                    I am Arnold Saldivar, 
+                    I'm Arnold Saldivar, 
                     Proficient in developing user-friendly web applications using Python, Django Framework, Bootstrap, and MySQL.
                     Committed to continuous learning, I stay updated with the latest industry trends to enhance my technical expertise.
                     My goal is to further develop my skills in web application and software development to create innovative and efficient solutions.
