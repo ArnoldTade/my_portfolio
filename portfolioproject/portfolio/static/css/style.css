@@ -106,10 +106,16 @@ body {
     animation-delay: 0.8s;
 }
 
+.simple {
+    opacity: 0;
+    position: relative;
+    animation: animation-left 1.3s ease forwards;
+    animation-delay: 1s;
+}
+
 section {
     opacity: 0;
     position: relative;
-    animation-delay: 0.9s;
     animation: animation-bottom 1s ease forwards;
     animation-delay: 1s;
 
@@ -153,6 +159,11 @@ section {
         align-items: end;
     }
 
+    .other-projects {
+        color: #5e5e5e;
+        float: right;
+    }
+
 }
 
 footer {
@@ -181,11 +192,33 @@ p {
 }
 
 /* ABOUT ME */
+.container-summary {
+    opacity: 0;
+    position: relative;
+    animation: animation-bottom 0.8s ease forwards;
+    animation-delay: 0.3s;
+
+    margin: 13vh;
+    padding-right: 20vh !important;
+    padding-left: 20vh !important;
+}
+
 .main-intro {
     margin-top: 80px;
 
+    .text-start {
+        opacity: 0;
+        position: relative;
+        animation: animation-bottom 0.5s ease forwards;
+        animation-delay: 1s;
+    }
+
     img {
         border-radius: 0.5rem;
+        opacity: 0;
+        position: relative;
+        animation: animation-bottom 0.5s ease forwards;
+        animation-delay: 1.2s;
     }
 }
 

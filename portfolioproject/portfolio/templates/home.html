@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 <main class="main-hero container">
-    <p class="text-title fw-bold"> <span class="web">Web Development.</span> <span class="interfaces">Interfaces.</span><span class="ux">UX.</span> </p>
+    <p class="text-title fw-bold"> <span class="web">Web Development.</span> <span class="interfaces">Interfaces.</span><span class="ux">UX.</span> <span class="simple">Simplistic Design.</span> </p>
 </main>
 <section class="section-project">
     <div class="container ">
@@ -48,8 +48,9 @@
                 <img src="{% static 'img/ecom.png' %}" class="img-fluid" alt="e-claSched">
             </div>
         </div>
-       
+        <a class=" fs-5 fw-semibold other-projects" href="{% url 'about' %}">Other projects <i class="bi bi-arrow-right"></i></a>
     </div>
+
 </section>
 
 <article class="about-me">
