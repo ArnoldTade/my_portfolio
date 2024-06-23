@@ -3,16 +3,12 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 def home(request):
-    title = "Home"
-    context = {
-        "title": title,
-    }
-    return render(request, "home.html", context)
+    return render(request, "home.html")
 
 
 def about(request):
-    title = "About"
-    context = {
-        "title": title,
-    }
-    return render(request, "about.html", context)
+    return render(request, "about.html")
+
+
+def side_project(request):
+    return render(request, "side-project.html")
