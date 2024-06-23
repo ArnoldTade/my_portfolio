@@ -1,9 +1,81 @@
 {% include '_header.html' %}
-
+{% load static %}
 {% block content %}
-<main class="main-hero container">
-    
-</main>
+<main class="main-intro container">
+    <div class="row">
+        <div class="col-sm">
+            <p class="text-start fs-5">
+                {% lorem 1 b random %}
+            </p>
+        </div>
 
+        <div class="col-sm">
+            <img src="{% static 'img/me.jpg' %}" class="img-fluid rounded float-end" alt="e-claSched">
+        </div>
+    </div>
+    <br>
+    <hr>
+</main>
+<section class="section-about">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-start fw-bold">Experience</h2>
+            <div class="col-sm-4">
+                <p class="fs-4 fw-semibold">On the job Trainee</p>
+                <p class="fs-5">Bayawan District Hospital</p>
+                <p class="fs-5">July 2023 - Dec 2023</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="fs-4 fw-semibold">Software Developer</p>
+                <p class="fs-5">Laure Realty Law Office</p>
+                <p class="fs-5">June 2020 - July 2020</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <h2 class="text-start fw-bold">Education</h2>
+            <div class="col-sm-7">
+                <p class="fs-4 fw-semibold">Bachelor of Science in Information Technology</p>
+                <p class="fs-5">Negros Oriental State University,Bayawan Santa Catalina Campus</p>
+                <p class="fs-5">2023-2024</p>
+            </div>
+            <div class="col-sm-7">
+                <p class="fs-4 fw-semibold">Information and Communications Technology</p>
+                <p class="fs-5">Southern Tech College Foundation INC.,</p>
+                <p class="fs-5">2019-2020</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-start">
+            <h2 class="text-start fw-bold">Skills</h2>
+            <div class="col-sm-4">
+                <p class="fs-4">Python</p>
+                <p class="fs-4">Django</p>
+                <p class="fs-4">Visual Basic</p>
+                <p class="fs-4">Bootstrap</p>
+                <p class="fs-4">Semantic ui</p>
+                <p class="fs-4">Git and GitHub</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="fs-4">CSS, JavaScript, HTML</p>
+                <p class="fs-4">Postman</p>
+                <p class="fs-4">Web Design</p>
+                <p class="fs-4">Problem Solving</p>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <h2 class="text-start fw-bold">Contact</h2>
+            <div class="col-sm-4">
+                <p class="fs-4">saldivararnold80@gmail.com</p>
+                <p class="fs-4">
+                    <a href="#">Linkedin</a>
+                </p>
+                <p class="fs-4">
+                    <a href="#">Facebook</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<section>   
 {% endblock %}
 {% include '_footer.html' %}
