@@ -12,3 +12,15 @@ def about(request):
 
 def side_project(request):
     return render(request, "side-project.html")
+
+
+def eclasched(request):
+    return render(request, "e-clasched.html")
+
+
+def attendance(request):
+    return render(request, "attendance.html")
+
+
+def farmlink(request):
+    return render(request, "farmlink.html")
