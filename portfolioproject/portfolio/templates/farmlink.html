@@ -2,7 +2,88 @@
 {% load static %}
 
 {% block content %}
-<h1>FARMLINK</h1>
+<main>
+    <div class="container-sm container-eclasched overflow-hidden text-center">
+    <p class="fs-1 text-center fw-bold">Farmlink</p>
+    <br>
+    <p class="fs-3 text-start fw-semibold">
+        An auto generated class schedule and management system. 
+        A system to minimize workload, avoid conflicts and organize room assignments in creating class schedules. 
+        With automation, the system turns days worth of work in less than an hour.
+    </p>
+    <br>
+    <br>
+    <p class="fs-5 text-start text-p1">
+        e-ClaSched was a capstone project we proposed and developed back in 2024. The purpose was to automate the creation of 
+        class schedules in Negros Oriental State University, Bayawan Santa Catalina Campus. With over 6 colleges and a hundred instructors, 
+        it makes sure that there are no conflicts between instructor's class schedules and fair distribution of time and assignment of rooms.
+    </p>
+
+    <br>
+    <p class="fs-5 text-start text-p2">
+        As the sole developer of e-ClaSched, I played a pivotal role in shaping the system's architecture, design and functionality. 
+        It was a challenge for me considering the complexity and wide scope of the project. e-clasched success was the result of hardwork, planning and 
+        problem solving. Now, e-Clasched has been implemented and now being used in the university.  
+    </p>
+    <br>
+    <br><hr>
+    <p class="fs-5 text-start text-p3 fw-bolder">
+        Technologies used: 
+    </p>
+    <p class="fs-5 text-start text-p3 fw-semibold">
+       Python, Django, Bootstrap, MySQL, HTML, CSS, JavaScript
+    </p>
+
+    </div>
+    <div class="container-fluid container-eclasched-img">
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/7.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/5.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/2.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/6.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/10.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/9.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/6.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/4.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+            <div class="col-sm">
+                <img src="{% static 'img/e-clasched/1.png' %}" class="img-fluid mx-auto d-block" alt="e-claSched">
+            </div>
+        </div>
+    <a href="{% url 'home' %}" class="text-center fw-semibold fs-2 all-project">Back to all project</a>
+        
+    </div>
+</main>
 
 {% endblock %}
 
