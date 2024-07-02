@@ -129,7 +129,8 @@ section {
     }
 
 
-    .col-sm-9 {
+    .col-sm-9,
+    .col-sm-8 {
         background-color: #8a8a8a31;
         padding: 20px !important;
         margin: 10px 10px 100px 10px;
@@ -139,8 +140,11 @@ section {
         cursor: pointer;
     }
 
-    .col-sm-9:hover {
+    .col-sm-8 {
+        cursor: default !important;
+    }
 
+    .col-sm-9:hover {
         transition: 0.3s;
     }
 
